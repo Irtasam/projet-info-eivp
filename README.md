@@ -32,7 +32,8 @@ correction du problème d'ouverture du fichier csv dans python
 problème à gérer les premieres valeurs du fichier sont des noms nécéssaire de les supprimer
 création d'un algorithme supprimant la première valeur des listes crées avec la fonction remove
 --> échec de fontionnement 
-création d'un algorithme permettant de retirer les 7 premières cases du fichier csv avant de séparer ses colonnes en listes
+
+pour résoudre cela création d'un algorithme permettant de retirer les 7 premières cases du fichier csv avant de séparer ses colonnes en listes
 
 optimisation de l'algorithme --> succès quant à l'affichage des données grâce à une autre bibliothèque : os.
 Optimmisation du classement des données dans des listes avec une méthode consistant à parcourir les données qu'une seule fois.
@@ -45,5 +46,6 @@ initiation partiel de l'utilisation de git plus explicative avec le professeur r
 
 début de l'écriture du rendu à partir des notes
 
+explications et aide à l'initiation de git grâce à des camarades
 
 
