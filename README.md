@@ -1,14 +1,16 @@
 # projet-info-eivp
 (à cause de problèmes quand a la maitrise des logiciel git et de différents problèmes, nous avons pris des noes à part et les mettont maintenant)
-(voici le travail accompli par le binôme sans dissociation des tâches
+(voici le travail accompli par le binôme sans dissociation des tâches)
+
 
 essaie 1
+
 apprendre l'utilisation de git en classe
+
 ***Partie 1: Début du projet en groupe
 
 apprehension du sujet
 apprendre comment ajouter un fichier csv dans python
-ajout du fichier csv dans git
 création de l'algorithme
 aajout du fichier csv dans l'algorithme 
 création des fonctions de base
