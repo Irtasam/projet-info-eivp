@@ -34,7 +34,9 @@ création d'un algorithme supprimant la première valeur des listes crées avec 
 --> échec de fontionnement 
 création d'un algorithme permettant de retirer les 7 premières cases du fichier csv avant de séparer ses colonnes en listes
 
-optimisation de l'algorithme
+optimisation de l'algorithme --> succès quant à l'affichage des données grâce à une autre bibliothèque : os.
+Optimmisation du classement des données dans des listes avec une méthode consistant à parcourir les données qu'une seule fois.
+Problème : comment gérer les dates. Solution : bibliothèque pandas. Comment l'utiliser ?
 
 ***Partie 3: 
 
