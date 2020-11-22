@@ -12,7 +12,7 @@ apprendre l'utilisation de git en classe
 apprehension du sujet
 apprendre comment ajouter un fichier csv dans python
 création de l'algorithme
-aajout du fichier csv dans l'algorithme 
+ajout du fichier csv dans l'algorithme 
 création des fonctions de base
 
 
@@ -42,4 +42,6 @@ initiation partiel de l'utilisation de git plus explicative avec le professeur r
 -->porblème pour utiliser le commit et push qui refuse de sauvegarder l'avancé sur git sur le fichier de github
 
 début de l'écriture du rendu à partir des notes
+
+
 
