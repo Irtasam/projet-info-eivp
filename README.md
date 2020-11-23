@@ -48,4 +48,4 @@ début de l'écriture du rendu à partir des notes
 
 explications et aide à l'initiation de git grâce à des camarades
 
-
+optimisation de l'algorithme
