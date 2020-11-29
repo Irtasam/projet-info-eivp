@@ -48,7 +48,7 @@ Lum = []
 CO2 = []
 Sent_at = []
 
-Titre = [ID, Noise, Temp, Hum, Lum, CO2, Sent_at]
+Donnees = [ID, Noise, Temp, Hum, Lum, CO2, Sent_at]
 
 #Fonction pour passer d'une date en str à une date et heure en list
 def datetimelist(chaine):
@@ -75,7 +75,7 @@ for i in range(lig):
             date = datetimelist(donnee)     #avoir la date et l'heure en liste
             donnee = datetime.datetime(date[0],date[1],date[2],date[3],date[4],date[5])
             #pour avoir la date en classe Datetime pour être correctement exploitée
-        Titre[j].append(donnee)  #insérer dans les bonnes listes les bonnes données
+        Donnees[j].append(donnee)  #insérer dans les bonnes listes les bonnes données
 
 #Là on a les différentes listes ID, Noise, etc avec leurs données numériques
 #Pour Sent_at, on a les dates et heures en datetime.datetime
