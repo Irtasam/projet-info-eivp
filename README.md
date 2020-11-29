@@ -48,4 +48,7 @@ explications et aide à l'initiation de git grâce à des camarades
 
 optimisation de l'algorithme --> succès quant à l'affichage des données grâce à une autre bibliothèque : os.
 Optimmisation du classement des données dans des listes avec une méthode consistant à parcourir les données qu'une seule fois.
-Problème : comment gérer les dates. Solution : bibliothèque pandas. Comment l'utiliser ?
+Problème : comment gérer les dates. Solution : bibliothèque pandas. Problème : python ne reconnaît pas sent_at comme une liste.
+Contourner ceci en convertissant les dates en str au format datetime.datetime
+
+Désormais : possible de tracer des courbes avec matplotlib.pyplot en prenant la liste des dates simplement comme abscisse et une colonne de données comme ordonnée.
