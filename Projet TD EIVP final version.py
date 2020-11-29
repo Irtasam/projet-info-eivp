@@ -36,6 +36,7 @@ def str_list(chaine):
     return L
 
 lig = len(L)    #nombre de lignes
+col = len(L[0]) #nombre de colonnes
 #Transformer les lignes en listes de str pour récupérer les données
 for i in range(lig):
     L[i] = str_list(L[i])
@@ -65,7 +66,7 @@ def datetimelist(chaine):
     return Date
     
 for i in range(lig):
-    for j in range(len(L[0])):
+    for j in range(col):
         donnee = L[i][j]
         if j != 6:
             donnee = float(donnee)  #passer de str à nombre si possible
