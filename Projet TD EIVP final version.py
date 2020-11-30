@@ -9,6 +9,7 @@ Created on Tue Nov 17 10:05:47 2020
 
 import datetime
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 
 os.getcwd()
