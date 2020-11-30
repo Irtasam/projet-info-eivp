@@ -86,26 +86,26 @@ def niveau_sonore():
     minNoise = min(Noise)
     maxNoise = max(Noise)
     medianeNoise = np.median(Noise)
-    moyNoise = np.mean(Noise)
-    varNoise = np.var(Noise)
-    ecartypeNoise = varNoise**0.5
+#    moyNoise = np.mean(Noise)
+#    varNoise = np.var(Noise)
+#    ecartypeNoise = varNoise**0.5
     
     print("Niveau sonore \n",)
     print("Minimum = "+str(minNoise))
     print("Maximum = "+str(maxNoise))
     print("Médiane = "+str(medianeNoise))
-    print("Moyenne = "+str(moyNoise))
-    print("Variance = "+str(varNoise))
-    print("Ecart-type = "+str(ecartypeNoise))
+#    print("Moyenne = "+str(moyNoise))
+#    print("Variance = "+str(varNoise))
+#    print("Ecart-type = "+str(ecartypeNoise))
     
     plt.figure()
     plt.plot(Sent_at,Noise)
-    plt.plot(Sent_at, lig*[moyNoise + ecartypeNoise], c='orange', lw=2, label='µ + sigma')
-    plt.plot(Sent_at, lig*[moyNoise - ecartypeNoise], c='orange', lw=2, label='µ - sigma')
+#    plt.plot(Sent_at, lig*[moyNoise + ecartypeNoise], c='orange', lw=2, label='µ + sigma')
+#    plt.plot(Sent_at, lig*[moyNoise - ecartypeNoise], c='orange', lw=2, label='µ - sigma')
     plt.title('Niveau sonore en fonction du temps')
     plt.xlabel('Temps')
     plt.ylabel('Niveau sonore (dBA)')
-    plt.legend()
+#    plt.legend()
     plt.show()
 
 def température():
