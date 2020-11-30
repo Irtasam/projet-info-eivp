@@ -21,7 +21,7 @@ problèmes rencontrés:
 -incompréhension de l'utilisation de git
 
 
-***Partie 2: 
+***Partie 2: Première pistes et premier échecs
 
 continuation du projet
 
@@ -37,7 +37,7 @@ pour résoudre cela création d'un algorithme permettant de retirer les 7 premi�
 
 optimisation de l'algorithme 
 
-***Partie 3: 
+***Partie 3: Phase final du projet
 
 initiation partiel de l'utilisation de git plus explicative avec le professeur responsable, resultats mitigé
 -->porblème pour utiliser le commit et push qui refuse de sauvegarder l'avancé sur git sur le fichier de github
