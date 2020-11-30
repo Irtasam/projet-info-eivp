@@ -81,10 +81,93 @@ for i in range(lig):
 #Là on a les différentes listes ID, Noise, etc avec leurs données numériques
 #Pour Sent_at, on a les dates et heures en datetime.datetime
         
+def niveau_sonore():
+    minNoise = min(Noise)
+    maxNoise = max(Noise)
+    medianeNoise = np.median(Noise)
+    moyNoise = np.mean(Noise)
+    varNoise = np.var(Noise)
+    ecartypeNoise = varNoise**0.5
+    
+    plt.figure()
+    plt.plot(Sent_at,Noise)
+    plt.plot(Sent_at, lig*[moyNoise + ecartypeNoise], c='orange', lw=2, label='µ + sigma')
+    plt.plot(Sent_at, lig*[moyNoise - ecartypeNoise], c='orange', lw=2, label='µ - sigma')
+    plt.title('Niveau sonore en fonction du temps')
+    plt.xlabel('Temps')
+    plt.ylabel('Niveau sonore (dBA)')
+    plt.legend()
+    plt.show()
 
+def température():
+    minTemp = min(Temp)
+    maxTemp = max(Temp)
+    medianeTemp = np.median(Temp)
+    moyTemp = np.mean(Temp)
+    varTemp = np.var(Temp)
+    ecartypeTemp = varTemp**0.5
+    
+    plt.figure()
+    plt.plot(Sent_at, Temp, c='blue')
+    plt.plot(Sent_at, lig*[moyTemp + ecartypeTemp], c='orange', lw=2, label='µ + sigma')
+    plt.plot(Sent_at, lig*[moyTemp - ecartypeTemp], c='orange', lw=2, label='µ - sigma')
+    plt.title('Température en fonction du temps')
+    plt.xlabel('Temps')
+    plt.ylabel('Température (°C)')
+    plt.legend()
+    plt.show()
+    
+def humidité_relative():
+    minHum = min(Hum)
+    maxHum = max(Hum)
+    medianeHum = np.median(Hum)
+    moyHum = np.mean(Hum)
+    varHum = np.var(Hum)
+    ecartypeHum = varHum**0.5
+    
+    plt.figure()
+    plt.plot(Sent_at, Hum)
+    plt.plot(Sent_at, lig*[moyHum + ecartypeHum], c='orange', lw=2, label='µ + sigma')
+    plt.plot(Sent_at, lig*[moyHum - ecartypeHum], c='orange', lw=2, label='µ - sigma')
+    plt.title('Humidité relative en fonction du temps')
+    plt.xlabel('Temps')
+    plt.ylabel('Humidité relative (%)')
+    plt.legend()
+    plt.show()
 
-#plt.figure()
-#plt.plot(Sent_at,Temp)
-#plt.title('Température en fct du temps')
-#plt.xlabel('Temps')
-#plt.ylabel('Température')
+def luminosité():
+    minLum = min(Lum)
+    maxLum = max(Lum)
+    medianeLum = np.median(Lum)
+    moyLum = np.mean(Lum)
+    varLum = np.var(Lum)
+    ecartypeLum = varLum**0.5
+    
+    plt.figure()
+    plt.plot(Sent_at, Lum)
+    plt.plot(Sent_at, lig*[moyLum + ecartypeLum], c='orange', lw=2, label='µ + sigma')
+    plt.plot(Sent_at, lig*[moyLum - ecartypeLum], c='orange', lw=2, label='µ - sigma')
+    plt.title('Niveau lumineux en fonction du temps')
+    plt.xlabel('Temps')
+    plt.ylabel('Niveau lumineux (lux)')
+    plt.legend()
+    plt.show()
+    
+def co2():
+    minCO2 = min(CO2)
+    maxCO2 = max(CO2)
+    medianeCO2 = np.median(CO2)
+    moyCO2 = np.mean(CO2)
+    varCO2 = np.var(CO2)
+    ecartypeCO2 = varCO2**0.5
+    
+    plt.figure()
+    plt.plot(Sent_at, CO2)
+    plt.plot(Sent_at, lig*[moyCO2 + ecartypeCO2], c='orange', lw=2, label='µ + sigma')
+    plt.plot(Sent_at, lig*[moyCO2 - ecartypeCO2], c='orange', lw=2, label='µ - sigma')
+    plt.title('Quantité de CO2 en fonction du temps')
+    plt.xlabel('Temps')
+    plt.ylabel('Quantité de CO2 (ppm)')
+    plt.legend()
+    plt.show()
+
