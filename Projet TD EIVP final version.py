@@ -90,6 +90,14 @@ def niveau_sonore():
     varNoise = np.var(Noise)
     ecartypeNoise = varNoise**0.5
     
+    print("Niveau sonore \n",)
+    print("Minimum = "+str(minNoise))
+    print("Maximum = "+str(maxNoise))
+    print("Médiane = "+str(medianeNoise))
+    print("Moyenne = "+str(moyNoise))
+    print("Variance = "+str(varNoise))
+    print("Ecart-type = "+str(ecartypeNoise))
+    
     plt.figure()
     plt.plot(Sent_at,Noise)
     plt.plot(Sent_at, lig*[moyNoise + ecartypeNoise], c='orange', lw=2, label='µ + sigma')
@@ -107,6 +115,14 @@ def température():
     moyTemp = np.mean(Temp)
     varTemp = np.var(Temp)
     ecartypeTemp = varTemp**0.5
+    
+    print("Température \n",)
+    print("Minimum = "+str(minTemp))
+    print("Maximum = "+str(maxTemp))
+    print("Médiane = "+str(medianeTemp))
+    print("Moyenne = "+str(moyTemp))
+    print("Variance = "+str(varTemp))
+    print("Ecart-type = "+str(ecartypeTemp))
     
     plt.figure()
     plt.plot(Sent_at, Temp, c='blue')
@@ -126,6 +142,14 @@ def humidité_relative():
     varHum = np.var(Hum)
     ecartypeHum = varHum**0.5
     
+    print("Humidité relative \n",)
+    print("Minimum = "+str(minHum))
+    print("Maximum = "+str(maxHum))
+    print("Médiane = "+str(medianeHum))
+    print("Moyenne = "+str(moyHum))
+    print("Variance = "+str(varHum))
+    print("Ecart-type = "+str(ecartypeHum))
+    
     plt.figure()
     plt.plot(Sent_at, Hum)
     plt.plot(Sent_at, lig*[moyHum + ecartypeHum], c='orange', lw=2, label='µ + sigma')
@@ -144,6 +168,14 @@ def luminosité():
     varLum = np.var(Lum)
     ecartypeLum = varLum**0.5
     
+    print("Luminosité \n",)
+    print("Minimum = "+str(minLum))
+    print("Maximum = "+str(maxLum))
+    print("Médiane = "+str(medianeLum))
+    print("Moyenne = "+str(moyLum))
+    print("Variance = "+str(varLum))
+    print("Ecart-type = "+str(ecartypeLum))
+    
     plt.figure()
     plt.plot(Sent_at, Lum)
     plt.plot(Sent_at, lig*[moyLum + ecartypeLum], c='orange', lw=2, label='µ + sigma')
@@ -161,6 +193,14 @@ def co2():
     moyCO2 = np.mean(CO2)
     varCO2 = np.var(CO2)
     ecartypeCO2 = varCO2**0.5
+    
+    print("Quantité de CO2 \n",)
+    print("Minimum = "+str(minCO2))
+    print("Maximum = "+str(maxCO2))
+    print("Médiane = "+str(medianeCO2))
+    print("Moyenne = "+str(moyCO2))
+    print("Variance = "+str(varCO2))
+    print("Ecart-type = "+str(ecartypeCO2))
     
     plt.figure()
     plt.plot(Sent_at, CO2)
