@@ -97,6 +97,7 @@ def niveau_sonore():
 #    print("Moyenne = "+str(moyNoise))
 #    print("Variance = "+str(varNoise))
 #    print("Ecart-type = "+str(ecartypeNoise))
+    print("\n")
     
     plt.figure()
     plt.plot(Sent_at,Noise)
@@ -123,6 +124,7 @@ def température():
     print("Moyenne = "+str(moyTemp))
     print("Variance = "+str(varTemp))
     print("Ecart-type = "+str(ecartypeTemp))
+    print("\n")
     
     plt.figure()
     plt.plot(Sent_at, Temp, c='blue')
@@ -149,6 +151,7 @@ def humidité_relative():
     print("Moyenne = "+str(moyHum))
     print("Variance = "+str(varHum))
     print("Ecart-type = "+str(ecartypeHum))
+    print("\n")
     
     plt.figure()
     plt.plot(Sent_at, Hum)
@@ -175,6 +178,7 @@ def luminosité():
     print("Moyenne = "+str(moyLum))
     print("Variance = "+str(varLum))
     print("Ecart-type = "+str(ecartypeLum))
+    print("\n")
     
     plt.figure()
     plt.plot(Sent_at, Lum)
@@ -201,6 +205,7 @@ def co2():
     print("Moyenne = "+str(moyCO2))
     print("Variance = "+str(varCO2))
     print("Ecart-type = "+str(ecartypeCO2))
+    print("\n")
     
     plt.figure()
     plt.plot(Sent_at, CO2)
@@ -212,3 +217,10 @@ def co2():
     plt.legend()
     plt.show()
 
+def corrélation(A,B):
+    A = np.array(A)
+    B = np.array(B)
+    
+    C = np.vstack((A,B))
+    correl = np.corrcoef(C)[0,1]
+    print("Coefficient de corrélation : ",correl)
