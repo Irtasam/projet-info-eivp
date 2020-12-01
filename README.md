@@ -57,3 +57,4 @@ Programme finalisé : possibilité d'afficher les courbes après avoir affiché 
 
 probleme pour faire apparaitre les statistiques des courbes sur les courbes
 
+fin du projet
