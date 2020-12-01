@@ -54,3 +54,6 @@ Contourner ceci en convertissant les dates en str au format datetime.datetime
 Désormais : possible de tracer des courbes avec matplotlib.pyplot en prenant la liste des dates simplement comme abscisse et une colonne de données comme ordonnée.
 
 Programme finalisé : possibilité d'afficher les courbes après avoir affiché les données statistiques dans la console, et ce pour chacune des grandeurs mesurées.
+
+probleme pour faire apparaitre les statistiques des courbes sur les courbes
+
